@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(109, 122, 114, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(109, 122, 114, 0.4);
+}
+
+/* Dark Mode Overrides */
+.dark body {
+  background-color: #0b1c30;
+  color: #f8f9ff;
+}
+
+.dark .bg-surface {
+  background-color: #0b1c30 !important;
+}
+
+.dark .bg-surface-container-lowest {
+  background-color: #132438 !important;
+}
+
+.dark .text-on-surface {
+  color: #f8f9ff !important;
+}
+
+.dark .text-secondary {
+  color: #a0aec0 !important;
+}
+
+.dark .border-outline-variant\/50 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
